@@ -17,6 +17,9 @@
 
 function hello(){
     document.getElementById("texto").textContend ="hello world";
+    document.getElementById("texto").style.color ="red";
+    
+
 
 }
 
