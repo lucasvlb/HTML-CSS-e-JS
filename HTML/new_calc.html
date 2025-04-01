@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="/CSS/new_calc.css">
 </head>
 <body>
+    
     <div class="calculadora">
-        <div class="display">
-        <input type="text" id="display" readonly>
-         </div>
+        
 
+         <div class="inputs">
+            <input type="number" id="numero1">
+            <input type="number" id="numero2">
+        </div>
          <div class="botoes">
             <button onclick="">7</button>
             <button onclick="">8</button>
             <button onclick="">9</button>
-            <button onclick="">*</button>
+            <button onclick="multiplicar()">*</button>
             
             <button onclick="">4</button>
             <button onclick="">5</button>
             <button onclick="">6</button>
-            <button onclick="">-</button>
+            <button onclick="subtrair()">-</button>
 
             <button onclick="">1</button>
             <button onclick="">2</button>
             <button onclick="">3</button>
-            <button onclick="">+</button>
+            <button onclick="somar()">+</button>
+            <button onclick="divisão()">/</button>
 
             <button onclick="">0</button>
             <button onclick="">=</button>
+        </div>
+        <div class="resultado">
+            <h2 id="resultado"></h2>
+        
+        </div>
+        
 
-
-
-
-            </div>
+        <script src="../JavaScript/new_calc.js"></script>
     </div>
 </body>
 </html>
