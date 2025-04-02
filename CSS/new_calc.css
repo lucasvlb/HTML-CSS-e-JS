@@ -1,14 +1,31 @@
 body{
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 100%;
+    height: 100vh;
     margin: auto;
+    
+}
+
+.calculadora{
+
 }
 
 .botoes{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
+}
+.botoes, button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.btlaranja{
+    background-color: orange;
+}
+.btcinza{
+    background-color: gray;
 }

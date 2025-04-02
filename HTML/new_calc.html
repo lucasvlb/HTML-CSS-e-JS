@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora Moderna</title>
-    <link rel="stylesheet" href="/CSS/new_calc.css">
+    <link rel="stylesheet" href="../CSS/new_calc.css">
 </head>
 <body>
     
     <div class="calculadora">
         
+        <div class="calculadora">
 
-         <div class="inputs">
-            <input type="number" id="numero1">
-            <input type="number" id="numero2">
-        </div>
-         <div class="botoes">
-            <button onclick="">7</button>
-            <button onclick="">8</button>
-            <button onclick="">9</button>
-            <button onclick="multiplicar()">*</button>
+            <div class="display">
+                <input type="text" id="tela" readonly>
+            </div>
+            <div class="botoes">
+            <button class="btcinza" onclick="expressao('7')">7</button>
+            <button class="btcinza" onclick="expressao('8')">8</button>
+            <button class="btcinza" onclick="expressao('9')">9</button>
+            <button class="btlaranja" onclick= "expressao('*')">*</button>
             
-            <button onclick="">4</button>
-            <button onclick="">5</button>
-            <button onclick="">6</button>
-            <button onclick="subtrair()">-</button>
+            <button class="btcinza" onclick="expressao('4')">4</button>
+            <button class="btcinza" onclick="expressao('5')">5</button>
+            <button class="btcinza" onclick="expressao('6')">6</button>
+            <button class="btlaranja"  onclick="expressao('-')">-</button>
 
-            <button onclick="">1</button>
-            <button onclick="">2</button>
-            <button onclick="">3</button>
-            <button onclick="somar()">+</button>
-            <button onclick="divisão()">/</button>
-
-            <button onclick="">0</button>
-            <button onclick="">=</button>
+            <button class="btcinza" onclick="expressao('1')">1</button>
+            <button class="btcinza" onclick="expressao('2')">2</button>
+            <button class="btcinza" onclick="expressao('3')">3</button>
+            <button class="btlaranja"  onclick="expressao('+')">+</button>
+            
+            <button onclick="expressao('0')">0</button>
+            <button onclick="limpar()">CE</button>
+            <button class="btlaranja" onclick="resultado()">=</button>
+            <button class="btlaranja"  onclick="expressao('/')">/</button>
         </div>
         <div class="resultado">
             <h2 id="resultado"></h2>
-        
+            <script src="../JavaScript/new_calc.js"></script>
         </div>
         
 
-        <script src="../JavaScript/new_calc.js"></script>
+        <script src="..//JavaScript/expressao.js"></script>
     </div>
 </body>
 </html>
